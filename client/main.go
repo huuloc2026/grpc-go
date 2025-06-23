@@ -21,7 +21,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	res, err := client.SayHello(ctx, &pb.HelloRequest{Name: "Huu Loc 2026"})
+	res, err := client.SayHello(ctx, &pb.HelloRequest{Name: "Huu Loc"})
 	if err != nil {
 		log.Fatalf("Error calling SayHello: %v", err)
 	}

@@ -54,7 +54,7 @@ import (
     "net"
 
     "google.golang.org/grpc"
-    pb "your_module_path/proto/helloworld"
+    pb "github.com/huuloc2026/grpc-go/github.com/huuloc2026/grpc-demo/greeterpb"
 )
 
 type server struct {
@@ -92,7 +92,7 @@ import (
     "time"
 
     "google.golang.org/grpc"
-    pb "your_module_path/proto/helloworld"
+    pb "github.com/huuloc2026/grpc-go/github.com/huuloc2026/grpc-demo/greeterpb"
 )
 
 func main() {
@@ -126,6 +126,12 @@ func main() {
      ```sh
      go run client/main.go
      ```
+
+Test
+```sh
+go test ./server
+```
+
 
 You should see the greeting message from the server.
 

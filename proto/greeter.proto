@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package greeter;
+option go_package = "github.com/huuloc2026/grpc-demo/greeterpb";
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
